@@ -1,21 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+void cong(float a, float b) {
+    float sum = a + b;
+    printf("\nTong: %f", sum);
+    float minus = a - b;
+    printf("\nHieu: %f", minus);
+    float multiplication = a * b;
+    printf("\nNhan: %f", multiplication);
+    float divide = a / b;
+    printf("\nChia: %f", divide);
+}
 
 int main(int argc, char *argv[]) {
-int *p;
-int i;
-int sum = 0;
-p = (int *) calloc(11, sizeof(int));
-for(i=1;i<11;i++) {
-		printf("\nNhap p[%d] = ", i);
-		scanf("%d", p + i);{
-			if (p[i] % 2 == 0){sum = sum + p[i]
-			;}
-		
-		}}
-printf("Vay tong so chia het cho 2 la %d", sum);
-		
-	return 0;
+    float a, b;
+    printf("\nHay nhap gia tri cua a: ");
+    scanf("%f", &a);
+    printf("Hay nhap gia tri cua b: ");
+    scanf("\n%f", &b);
+    cong(a, b);
+    return 0;
 }
